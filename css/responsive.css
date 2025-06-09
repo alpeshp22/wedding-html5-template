@@ -1,0 +1,55 @@
+@media (max-width: 1300px){
+    .hero-section .flower{
+        width: 12vw;
+    }
+    .couple-intro-sec .top-props{
+        width: 15vw;
+    }
+    .couple-intro-sec .bottom-props{
+        width: 10vw;
+    }
+    .story-timeline-sec .top-props{
+        top: 8vw;
+        width: 15vw;
+    }
+    .timeline-block {
+        align-items: center;
+        --bs-gutter-x: 4rem;
+    }
+    .invitation-sec .image-block {
+        max-width: 40%;
+        height: auto;
+        aspect-ratio: 9 / 11;
+    }
+    .invitation-sec .content-col {
+        padding-top: var(--size-30);
+        padding-bottom: var(--size-30);
+    }
+    .invitation-sec .container-fluid .top-props{
+        bottom: calc(100% - 9vw);
+        width: 12vw;
+    }
+}
+@media (max-width: 1024px){
+    :root{
+        --size-100: 5rem;
+        --body-text: 1rem;
+    }
+    .site-header .navbar-nav{
+        display: none;
+    }
+    .site-header .menu-btn {
+        padding: 0 1rem;
+        padding-right: 0;
+    }
+    .offcanvas-body .navbar-nav{
+        display: block;
+    }
+    .offcanvas-body .navbar-nav .nav-link{
+        padding: .75rem 0;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    .invitation-sec .content-col .bottom-props{
+        width: 10vw;
+    }
+}
