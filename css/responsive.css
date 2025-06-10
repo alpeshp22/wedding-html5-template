@@ -30,6 +30,8 @@
         width: 12vw;
     }
 }
+/* END 1300px */
+
 @media (max-width: 1024px){
     :root{
         --size-100: 5rem;
@@ -52,4 +54,296 @@
     .invitation-sec .content-col .bottom-props{
         width: 10vw;
     }
+    .event-details .vanue-info div:first-child{
+        padding-right: 1rem;
+    }
 }
+/* END 1024px */
+
+@media (max-width: 992px){
+    :root{
+        --large-text: 1.25rem;
+        --size-100: 3.125rem;
+    }
+    .site-header .navbar {
+        height: 70px;
+    }
+    .hero-section .container{
+        min-height: calc(100vh - 70px);
+    }
+    .intro-block .img-wrapper{
+        width: calc(50% - .5rem);
+        height: auto;
+        aspect-ratio: 9 / 10;
+    }
+    .timeline-block {
+        --bs-gutter-x: 2.5rem;
+    }
+    .timeline-block:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+    .timeline-block .image-block {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 9 / 9.73;
+        box-shadow: 16px 16px 0px var(--color-light-orange);
+    }
+    .story-timeline-sec .container .divider{
+        bottom: 90px;
+        width: 90%;
+    }
+    .prop-wrapper .bottom-props{
+        bottom: 60%;
+        right: 55%;
+        width: 25vw;
+    }
+    .invitation-sec .row {
+        display: block;
+    }
+    .invitation-sec .image-block {
+        max-width: 50%;
+        margin: 0 auto;
+        margin-bottom: -100px;
+        z-index: 2;
+    }
+    .invitation-sec .content-col {
+        padding-top: 60px;
+        padding-bottom: var(--size-30);
+        margin-bottom: 0;
+        border: 1px solid #CCCCCC;
+    }
+    .event-details .vanue-info{
+        max-width: 95%;
+    }
+    .event-details iframe {
+        border: 0;
+        aspect-ratio: 16 / 9;
+        height: auto;
+    }
+    .couple-list-sec .row {
+        --bs-gutter-y: 1.5rem;
+    }
+    .couple-list-sec .mini-container{
+        max-width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .form-wrapper{
+        max-width: 100%;
+    }
+    footer {
+        padding-top: var(--size-100);
+    }
+}
+/* END 992px */
+
+@media (max-width: 768px){
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+        max-width: 100%;
+        padding-left: 2.875rem;
+        padding-right: 2.875rem;
+    }
+    .container-fluid .container{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .intro-block {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .intro-block+.intro-block{
+        margin-top: 0;
+    }
+    .intro-block+.intro-block::before{
+        left: 50%;
+        top: -50px;
+        width: 100px;
+        height: 100px;
+    }
+    .timeline-block .image-block {
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+    .timeline-block:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+    .timeline-block:nth-child(even) {
+        text-align: right;
+    }
+    .timeline-block:nth-child(even) .image-block{
+        margin-left: auto;
+    }
+    .timeline-block .image-block.ms-auto {
+        margin-left: 0 !important;
+    }
+    .story-timeline-sec .container{
+        padding-bottom: 0;
+    }
+    .story-timeline-sec .container .divider {
+        top: 0;
+        bottom: auto;
+        height: 80%;
+        width: 88%;
+    }
+    .review-sec{
+        padding-top: var(--size-100);
+        padding-bottom: var(--size-100) !important;
+    }
+    .review-sec .content p, .review-sec .content strong {
+        font-size: 1rem;
+    }
+    .review-sec .content::after, .review-sec .content::before{
+        width: 30px;
+        height: 20px;
+        background-size: contain;
+    }
+    .review-sec .content{
+        padding: 0 2rem;
+    }
+    .owl-dots {
+        position: relative;
+        bottom: inherit;
+        top: inherit;
+        margin-top: var(--size-50);
+    }
+    .couple-list-sec .mini-container{
+        width: 100%;
+        padding-left: 2.875rem;
+        padding-right: 2.875rem;
+    }
+    footer hr{
+        margin-top: 0.5rem;
+    }
+}
+/* END 768px */
+
+@media (max-width: 575px){
+    :root {
+        --size-100: 1.875rem;
+    }
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+        max-width: 100%;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+    .container-fluid .container{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .hero-section strong, .hero-section p {
+        font-size: 1.125rem;
+    }
+    .hero-section strong {
+        letter-spacing: 6px;
+    }
+    .couple-intro-sec .top-props {
+        top: 130px;
+    }
+    .couple-intro-sec .bottom-props {
+        bottom: 35vw;
+    }
+    .intro-block strong{
+        margin-bottom: .5rem;
+    }
+    .invitation-sec .container-fluid .top-props {
+        bottom: calc(100% - 13%);
+        width: 15vw;
+    }
+    .invitation-sec .image-block{
+        width: 60%;
+    }
+    .invitation-sec .content-col {
+        padding-top: 80px;
+    }
+    .name-block div {
+        font-size: 2.125rem;
+    }
+    .name-block span {
+        font-size: 1.697rem;
+    }
+    .event-details .vanue-info{
+        max-width: calc(100% - 2.5rem);
+        padding: var(--size-30);
+    }
+    .event-details .vanue-info div:first-child{
+        margin-right: 1rem;
+    }
+    .gallery{
+        column-gap: .5rem;
+    }
+    .gallery a{
+        margin-bottom: .5rem;
+    }
+    .rsvp-section{
+        padding: var(--size-100) 0 !important;
+    }
+    .form-wrapper{
+        padding: 20px;
+    }
+    .couple-list-sec .mini-container{
+        width: 100%;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+    footer .logo-text{
+        font-size: 1.984rem;
+    }
+    footer hr {
+        margin-top: 0.25rem;
+        margin-bottom: 1rem;
+    }
+    footer .bottom-text {
+        font-size: 12px;
+    }
+    form .btn-group{
+        margin-top: 2rem;
+    }
+}
+/* END 575px */
+
+@media (max-width: 460px){
+    .intro-block {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .intro-block .img-wrapper{
+        margin: 0 auto;
+    }
+    .intro-block+.intro-block{
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    .intro-block .img-wrapper{
+        width: 60%;
+    }
+    .intro-block+.intro-block::before{
+        top: -58px;
+    }
+    .invitation-sec .content-col {
+        padding-top: 80px;
+        padding: 18px;
+        padding-right: 25px;
+        padding-top: 80px;
+    }
+    .vanue-info {
+        flex-direction: column;
+        text-align: center;
+        row-gap: 20px;
+    }
+    .vanue-info div:first-child {
+        width: 100%;
+        max-width: 100% !important;
+        margin-right: 0 !important;
+        border-right: 0;
+        border-bottom: 1px solid var(--color-lime-green);
+        padding-right: 0;
+        padding-bottom: 20px;
+    }
+    .event-details .vanue-info strong::before{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
+/* END 575px */
