@@ -837,7 +837,11 @@ input[type="radio"]{
 .event-details .vanue-info div:first-child{
   margin-right: 2rem;
 }
-
+.event-details iframe {
+  width: 100%;
+  aspect-ratio: 16 / 8;
+  height: auto;
+}
 /*========================================
 END EVENT DETAILS SECTION
 ========================================*/
