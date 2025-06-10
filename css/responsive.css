@@ -68,6 +68,9 @@
     .site-header .navbar {
         height: 70px;
     }
+    .hero-section {
+        background-position: center center;
+    }
     .hero-section .container{
         min-height: calc(100vh - 70px);
     }
@@ -231,6 +234,10 @@
         padding-left: 0;
         padding-right: 0;
     }
+    .hero-section .container {
+        min-height: calc(90vh - 70px);
+    }
+    
     .hero-section strong, .hero-section p {
         font-size: 1.125rem;
     }
@@ -346,4 +353,4 @@
     }
     
 }
-/* END 575px */
+/* END 460px */
