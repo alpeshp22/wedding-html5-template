@@ -237,7 +237,7 @@
     .hero-section .container {
         min-height: calc(90vh - 70px);
     }
-    
+
     .hero-section strong, .hero-section p {
         font-size: 1.125rem;
     }
@@ -313,6 +313,7 @@
     .intro-block {
         flex-direction: column-reverse;
         justify-content: center;
+        text-align: center;
     }
     .intro-block .img-wrapper{
         margin: 0 auto;
