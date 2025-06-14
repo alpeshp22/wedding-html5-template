@@ -29,8 +29,23 @@
         bottom: calc(100% - 9vw);
         width: 12vw;
     }
+    .event-details .vanue-info {
+        margin-bottom: -70px;
+    }
 }
 /* END 1300px */
+
+@media (max-width: 1200px){
+    .couple-list-sec .row {
+        --bs-gutter-y: calc(var(--bs-gutter-x) * 1);
+    }
+    .person-card {
+        aspect-ratio: inherit;
+        max-height: inherit;
+        height: 45vw;
+    }
+}
+/* END 1200px */
 
 @media (max-width: 1024px){
     :root{
@@ -39,6 +54,10 @@
     }
     .site-header .navbar-nav{
         display: none;
+    }
+    .site-header .nav-link:focus, 
+    .site-header .nav-link:hover{
+        text-decoration: none;
     }
     .site-header .menu-btn {
         padding: 0 1rem;
@@ -68,11 +87,11 @@
     .site-header .navbar {
         height: 70px;
     }
-    .hero-section {
-        background-position: center center;
-    }
-    .hero-section .container{
+    .hero-section .carousel-item{
         min-height: calc(100vh - 70px);
+    }
+    .hero-section .carousel-indicators {
+        left: 20px;
     }
     .intro-block .img-wrapper{
         width: calc(50% - .5rem);
@@ -120,8 +139,7 @@
     }
     .event-details iframe {
         border: 0;
-        aspect-ratio: 16 / 9;
-        height: auto;
+        aspect-ratio: 16 / 7;
     }
     .couple-list-sec .row {
         --bs-gutter-y: 1.5rem;
@@ -150,6 +168,13 @@
         padding-left: 0;
         padding-right: 0;
     }
+    .hero-section .flower,
+    .couple-intro-sec .top-props,
+    .story-timeline-sec .top-props,
+    .invitation-sec .container-fluid .top-props,
+    .invitation-sec .content-col .bottom-props{
+        width: 20vw;
+    }
     .intro-block {
         max-width: 500px;
         margin-left: auto;
@@ -165,7 +190,7 @@
         height: 100px;
     }
     .timeline-block .image-block {
-        width: 50%;
+        width: 70%;
         margin-bottom: 2rem;
     }
     .timeline-block:not(:last-child) {
@@ -210,6 +235,11 @@
         top: inherit;
         margin-top: var(--size-50);
     }
+    .social-media a{
+        width: 24px;
+        height: 24px;
+        font-size: 12px;
+    }
     .couple-list-sec .mini-container{
         width: 100%;
         padding-left: 2.875rem;
@@ -234,8 +264,9 @@
         padding-left: 0;
         padding-right: 0;
     }
-    .hero-section .container {
+    .hero-section .carousel-item {
         min-height: calc(90vh - 70px);
+        padding-bottom: 100px;
     }
 
     .hero-section strong, .hero-section p {
@@ -244,11 +275,22 @@
     .hero-section strong {
         letter-spacing: 6px;
     }
+    .hero-section .carousel-indicators{
+        left: 8px;
+    }
+    .hero-section .carousel-caption{
+        padding-left: 2.875rem;
+        padding-right: 2.875rem;
+    }
+    .hero-section .mouse img{
+        width: 18px;
+    }
     .couple-intro-sec .top-props {
         top: 130px;
     }
     .couple-intro-sec .bottom-props {
-        bottom: 35vw;
+        bottom: 28vw;
+        width: 20vw;
     }
     .intro-block strong{
         margin-bottom: .5rem;
@@ -310,6 +352,11 @@
 /* END 575px */
 
 @media (max-width: 460px){
+    
+    .hero-section h1 span {
+        display: block;
+}
+
     .intro-block {
         flex-direction: column-reverse;
         justify-content: center;
@@ -348,10 +395,18 @@
         padding-right: 0;
         padding-bottom: 20px;
     }
+    .event-details .vanue-info{
+        margin-bottom: -10px;
+    }
     .event-details .vanue-info strong::before{
         margin-left: auto;
         margin-right: auto;
     }
-    
+    .couple-list-sec .col-6 {
+        width: 100%;
+    }
+    .person-card{
+        height: 100vw;
+    }
 }
 /* END 460px */

@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
 
 :root {
   --color-primary: #274C5B;
@@ -25,6 +26,7 @@
   --font-EB-Garamond: "EB Garamond", serif;
   --font-Playfair: "Playfair Display", serif;
   --font-AlexBrush: "Alex Brush", cursive;
+  --font-Niconne: "Niconne", cursive;
   --size-30: 1.875rem;
   --size-50: 3.125rem;
   --size-100: 6.25rem;
@@ -32,7 +34,9 @@
   --td-3: all .3s ease-in-out;
   --td-5: all .5s ease-in-out;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   position: relative;
   font-size: var(--body-text);
@@ -167,7 +171,6 @@ section,
   position: relative;
   overflow: hidden;
 }
-
 .section,
 .is_bg {
   padding-top: var(--size-100);
@@ -455,16 +458,12 @@ input[type="radio"] {
   color: var(--color-white);
 }
 
-.hero-section .btn {
-  margin-top: calc(var(--size-50) - 1rem);
-}
-
 .hero-section h1 {
   margin-bottom: 1.25rem;
 }
 
 .hero-section h1 span {
-  font-family: var(--font-Playfair);
+  font-family: var(--font-Niconne);
 }
 
 .hero-section strong,
@@ -478,36 +477,34 @@ input[type="radio"] {
   letter-spacing: 12px;
 }
 
-.hero-section {
-  position: relative;
+.hero-section .btn {
+  margin-top: calc(var(--size-50) - 1rem);
 }
 
 .hero-section .carousel-item {
   position: relative;
   min-height: calc(100vh - 70px);
   padding: var(--size-50) 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   z-index: 1;
 }
-
-.hero-section .carousel-item .cover-img {
+.hero-section .carousel-item .cover-img{
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center center;
-  z-index: 1;
-  transition: all 2s ease-in-out;
+  object-position: center;
+  transform: scale(1.2);
+  transition: transform 2.5s ease-in-out;
 }
-
-.hero-section .carousel-item.active .cover-img {
-  transform: scale(1.1);
-}
-
-.hero-section .carousel-item {
-  position: relative;
+.hero-section .carousel-item.active .cover-img{
+  transform: scale(1);
 }
 
 .hero-section .carousel-item::after {
@@ -534,13 +531,11 @@ input[type="radio"] {
 
 .hero-section .content {
   opacity: 0;
-  transform: translateY(-100px);
-  transition: all 0.8s ease-in-out;
 }
 
 .hero-section .carousel-item.active .content {
   opacity: 1;
-  transform: translateY(0);
+  animation: fadeInDown 1.5s forwards ease-in-out;
 }
 
 .hero-section .carousel-indicators {
@@ -553,9 +548,26 @@ input[type="radio"] {
   right: inherit;
   margin: 0;
   padding: 3vw 4vw;
+  padding-left: 12px;
   height: 100%;
 }
 
+/* For lg (max-width: 960px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .hero-section .carousel-indicators {
+    left: calc((100vw - 960px) / 2);
+  }
+}
+@media (min-width: 1200px) {
+  .hero-section .carousel-indicators {
+    left: calc((100vw - 1140px) / 2);
+  }
+}
+@media (min-width: 1400px) {
+  .hero-section .carousel-indicators {
+    left: calc((100vw - 1264px) / 2);
+  }
+}
 .hero-section .carousel-indicators button {
   width: 1.5px;
   height: 11px;
@@ -563,14 +575,14 @@ input[type="radio"] {
   margin: 0 !important;
   padding: 0 !important;
   border: 0;
+  border-radius: 10px;
   opacity: 1;
-  border-radius: 0;
   background-color: var(--color-white);
   transition: all .3s ease-in-out;
 }
 
 .hero-section .carousel-indicators:hover button {
-  width: 5px;
+  width: 3px;
 }
 
 .hero-section .carousel-indicators button.active {
@@ -925,10 +937,15 @@ input[type="radio"] {
 }
 
 .rsvp-text {
+  display: block;
+  color: var(--color-primary);
+  text-decoration: none;
   font-family: var(--heading-font);
   text-transform: uppercase;
 }
-
+.rsvp-text:hover {
+  color: var(--color-secondary);
+}
 .rsvp-text span {
   position: relative;
   display: block;
