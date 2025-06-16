@@ -44,18 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
     once: true, // animation happens only once on scroll
   });
 });
-/*==============================
-  HERO CAROUSEL
-==============================*/
-(function () {
-  var myCarouselElement = document.querySelector("#myCarousel");
-  if (myCarouselElement) {
-    new bootstrap.Carousel(myCarouselElement, {
-      interval: 500,
-      touch: true,
-    });
-  }
-})();
 
 /*==============================
   OWL REVIEW SLIDER
