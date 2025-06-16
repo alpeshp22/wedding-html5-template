@@ -45,6 +45,8 @@ body {
   font-family: var(--body-font);
   font-weight: 300;
   color: var(--color-dark);
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 /*========================================
