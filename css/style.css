@@ -34,9 +34,11 @@
   --td-3: all .3s ease-in-out;
   --td-5: all .5s ease-in-out;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   position: relative;
   font-size: var(--body-text);
@@ -123,10 +125,13 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
   z-index: 9999;
 }
 
 .ani-heartbeat {
+  width: 50px;
+  height: 50px;
   animation: heartbeat 1.5s infinite;
   transform-origin: center;
 }
@@ -171,6 +176,7 @@ section,
   position: relative;
   overflow: hidden;
 }
+
 .section,
 .is_bg {
   padding-top: var(--size-100);
@@ -492,7 +498,8 @@ input[type="radio"] {
   overflow: hidden;
   z-index: 1;
 }
-.hero-section .carousel-item .cover-img{
+
+.hero-section .carousel-item .cover-img {
   position: absolute;
   top: 0;
   left: 0;
@@ -503,7 +510,8 @@ input[type="radio"] {
   transform: scale(1.2);
   transition: transform 2.5s ease-in-out;
 }
-.hero-section .carousel-item.active .cover-img{
+
+.hero-section .carousel-item.active .cover-img {
   transform: scale(1);
 }
 
@@ -558,16 +566,19 @@ input[type="radio"] {
     left: calc((100vw - 960px) / 2);
   }
 }
+
 @media (min-width: 1200px) {
   .hero-section .carousel-indicators {
     left: calc((100vw - 1140px) / 2);
   }
 }
+
 @media (min-width: 1400px) {
   .hero-section .carousel-indicators {
     left: calc((100vw - 1264px) / 2);
   }
 }
+
 .hero-section .carousel-indicators button {
   width: 1.5px;
   height: 11px;
@@ -943,9 +954,11 @@ input[type="radio"] {
   font-family: var(--heading-font);
   text-transform: uppercase;
 }
+
 .rsvp-text:hover {
   color: var(--color-secondary);
 }
+
 .rsvp-text span {
   position: relative;
   display: block;
@@ -1142,7 +1155,7 @@ START COUPLE-LIST SECTION
   left: 8px;
   width: 50px;
   height: 40px;
-  background: url(../images/quote-left.png) center center no-repeat;
+  background: url(../images/quote-left.svg) center center no-repeat;
   background-size: contain;
 }
 
@@ -1151,7 +1164,7 @@ START COUPLE-LIST SECTION
   left: inherit;
   right: 8px;
   bottom: 50px;
-  background: url(../images/quote-right.png) center center no-repeat;
+  background: url(../images/quote-right.svg) center center no-repeat;
 }
 
 .review-sec .content p,
@@ -1163,6 +1176,14 @@ START COUPLE-LIST SECTION
 .review-sec .content strong span {
   font-size: var(--body-text);
   display: block;
+}
+
+.review-sec .bottom-props {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  user-select: none;
 }
 
 .owl-dots {
@@ -1218,13 +1239,11 @@ START COUPLE-LIST SECTION
 
 .gallery a img {
   width: 100%;
+  height: auto;
   cursor: pointer;
   transition: transform 0.3s;
 }
 
-/* .gallery a img:hover {
-  transform: scale(1.05);
-} */
 /*========================================
   END GALLERY SECTION
 ========================================*/
