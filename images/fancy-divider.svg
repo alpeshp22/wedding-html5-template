@@ -1,9 +1,0 @@
-<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 33" width="440" height="33">
-	<title>fancy-divider</title>
-	<defs>
-		<image  width="440" height="33" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAbgAAAAhCAMAAACcCk6+AAAAAXNSR0IB2cksfwAAAEtQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////g5kLBwAAABl0Uk5TAAAwXzHv7mDOIK/egN///hEBv75RYX8hoN6pgxwAAAGtSURBVHic3dldb4IwAIVhDqhLhtmy+PH//+CSmekYKiilUPpxOQ3Zey6U9Nw0eVJpqzJsJDVzz+F50dwTeFpUdHBcOSycilxNzpWjwhm3uvvAykHherf+iyrHhBvcyHJIOOcGlgPBqViosg/OzZNzNSMcuG77v1RbRW5OztWQYOAM17m8tVXkNsi5eq75PToUOMuljuYSuVk5jTVFDgI3LjOV3emtTltpqDFyDDhv+//6WyQ00+0XRw4B5x/btExo/NsvjBwBLnCrE5rw9osiB4AL3RKa+PYLIqd1PvcU/hw1x/7r/fTSP3xIn1M5jmpzOVe2vs4wycdGDWHFbQ/X1nvQ7hSsuGF0f7zadRnW/zUAuEgugbGjMDcEXCi3TWDM6A7mxoDz5eomhdH2awVzg8A5OZW1LGHQ7n9qW2PcKHCDnIFZH2I58357G2uIGwaul7sZGPez6RqzL3H1XPN7dDBw5kW2+e7/jwvlhv2kqyHhwGVaLSxMIDedA8aaERDcFE/OudGChPOOB1Q3KFxyz8ULFC665wKGChfccxGDhfPuuZDhwnX7/4zrlt0BlHYXPTqwr+AAAAAASUVORK5CYII="/>
-	</defs>
-	<style>
-	</style>
-	<use id="Background" href="#img1" x="0" y="0"/>
-</svg>
