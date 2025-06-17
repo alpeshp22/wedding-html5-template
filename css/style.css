@@ -675,7 +675,7 @@ input[type="radio"] {
   transform: translateX(-50%);
   width: 154px;
   height: 154px;
-  background-image: url(../images/hearts-shadow.png);
+  background-image: url(../images/hearts-shadow.svg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1339,6 +1339,8 @@ footer {
 }
 
 footer .logo-text {
+  display: flex;
+  align-items: center;
   font-size: clamp(3.5rem, 5vw + 1rem, 5.731rem);
   font-family: var(--heading-font);
   color: var(--color-primary);
@@ -1346,6 +1348,12 @@ footer .logo-text {
   text-transform: uppercase;
   margin-bottom: 2rem;
   line-height: normal;
+  text-decoration: none;
+}
+footer .logo-text:hover,
+footer .logo-text:focus-visible {
+  color: var(--color-secondary);
+  text-decoration: none;
 }
 
 footer h2 {

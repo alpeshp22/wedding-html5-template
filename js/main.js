@@ -61,4 +61,13 @@ $(document).ready(function () {
       margin: 30,
     });
   }
+
+  // Chrome extension error
+  if (chrome.runtime && chrome.runtime.sendMessage) {
+    chrome.runtime.sendMessage({ data: "test" }, function (response) {
+      if (chrome.runtime.lastError) {
+        console.warn(chrome.runtime.lastError.message);
+      }
+    });
+  }
 });
