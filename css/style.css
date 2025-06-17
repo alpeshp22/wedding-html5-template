@@ -494,6 +494,11 @@ input[type="radio"] {
   overflow: hidden;
   z-index: 1;
 }
+@media (min-width: 1600px){
+  .hero-section .carousel-item {
+    min-height: 960px;
+  }
+}
 .hero-section .carousel-item .cover-img{
   position: absolute;
   top: 0;
@@ -596,6 +601,7 @@ input[type="radio"] {
   position: absolute;
   right: 0;
   bottom: 10px;
+  height: auto;
   user-select: none;
   pointer-events: none;
   animation-duration: 2s;
@@ -740,6 +746,9 @@ input[type="radio"] {
 .story-timeline-sec .container {
   position: relative;
   padding-bottom: 1.5rem;
+  background-image: url('../images/timeline-divider.png');
+  background-repeat: no-repeat;
+  background-position: bottom center;
 }
 
 .story-timeline-sec .container .divider {
@@ -1346,6 +1355,7 @@ footer .logo-text {
 footer .logo-text:hover,
 footer .logo-text:focus-visible {
   color: var(--color-secondary);
+  text-decoration: none;
 }
 
 footer h2 {

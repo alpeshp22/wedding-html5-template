@@ -110,9 +110,9 @@
         aspect-ratio: 9 / 9.73;
         box-shadow: 16px 16px 0px var(--color-light-orange);
     }
-    .story-timeline-sec .container .divider{
-        bottom: 90px;
-        width: 90%;
+    .story-timeline-sec .container{
+        background-size: 90%;
+        background-position: bottom 35px center;
     }
     .prop-wrapper .bottom-props{
         bottom: 60%;
@@ -172,8 +172,16 @@
     .couple-intro-sec .top-props,
     .story-timeline-sec .top-props,
     .invitation-sec .container-fluid .top-props,
-    .invitation-sec .content-col .bottom-props{
+    .invitation-sec .content-col .bottom-props,
+    .review-sec .bottom-props{
         width: 20vw;
+    }
+    .couple-intro-sec .bottom-props {
+        width: 20vw;
+        bottom: 23vw;
+    }
+    .invitation-sec .container-fluid .top-props{
+        bottom: calc(100% - 120px);
     }
     .intro-block {
         max-width: 500px;
@@ -207,12 +215,7 @@
     }
     .story-timeline-sec .container{
         padding-bottom: 0;
-    }
-    .story-timeline-sec .container .divider {
-        top: 0;
-        bottom: auto;
-        height: 80%;
-        width: 88%;
+        background-image: none;
     }
     .review-sec{
         padding-top: var(--size-100);
@@ -221,7 +224,8 @@
     .review-sec .content p, .review-sec .content strong {
         font-size: 1rem;
     }
-    .review-sec .content::after, .review-sec .content::before{
+    .review-sec .content::after, 
+    .review-sec .content::before{
         width: 30px;
         height: 20px;
         background-size: contain;
