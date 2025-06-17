@@ -751,14 +751,6 @@ input[type="radio"] {
   background-position: bottom center;
 }
 
-.story-timeline-sec .container .divider {
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  pointer-events: none;
-}
-
 .timeline-block {
   align-items: center;
 }
