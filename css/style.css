@@ -43,6 +43,8 @@ body {
   font-family: var(--body-font);
   font-weight: 300;
   color: var(--color-dark);
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 /*========================================
@@ -709,16 +711,19 @@ input[type="radio"] {
 .couple-intro-sec .top-props,
 .couple-intro-sec .bottom-props {
   position: absolute;
+  height: auto;
 }
 
 .couple-intro-sec .top-props {
   right: 0;
   top: 100px;
+  height: auto;
 }
 
 .couple-intro-sec .bottom-props {
   left: 0;
   bottom: 100px;
+  height: auto;
 }
 
 /*========================================
@@ -795,6 +800,7 @@ input[type="radio"] {
   position: absolute;
   top: var(--size-50);
   right: 0;
+  height: auto;
 }
 
 .prop-wrapper {
@@ -806,6 +812,7 @@ input[type="radio"] {
   position: absolute;
   bottom: 62%;
   right: 53%;
+  height: auto;
 }
 
 /*========================================
@@ -980,6 +987,7 @@ input[type="radio"] {
   user-select: none;
   z-index: -1;
   width: 200px;
+  height: auto;
   z-index: -1;
 }
 
@@ -987,6 +995,7 @@ input[type="radio"] {
   position: absolute;
   bottom: 0;
   right: 0;
+  height: auto;
   user-select: none;
   z-index: -1;
 }
@@ -1164,6 +1173,14 @@ START COUPLE-LIST SECTION
   font-size: var(--body-text);
   display: block;
 }
+.review-sec .bottom-props {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  user-select: none;
+  pointer-events: none;
+}
 
 .owl-dots {
   position: absolute;
@@ -1218,13 +1235,11 @@ START COUPLE-LIST SECTION
 
 .gallery a img {
   width: 100%;
+  height: auto;
   cursor: pointer;
   transition: transform 0.3s;
 }
 
-/* .gallery a img:hover {
-  transform: scale(1.05);
-} */
 /*========================================
   END GALLERY SECTION
 ========================================*/
@@ -1262,6 +1277,9 @@ START COUPLE-LIST SECTION
 .form-wrapper .fancy-divider {
   margin-bottom: 2rem;
   text-align: center;
+}
+.form-wrapper .fancy-divider img{
+  height: auto;
 }
 
 .outline-form input,
