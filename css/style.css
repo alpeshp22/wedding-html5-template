@@ -34,9 +34,11 @@
   --td-3: all .3s ease-in-out;
   --td-5: all .5s ease-in-out;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   position: relative;
   font-size: var(--body-text);
@@ -173,6 +175,7 @@ section,
   position: relative;
   overflow: hidden;
 }
+
 .section,
 .is_bg {
   padding-top: var(--size-100);
@@ -494,12 +497,14 @@ input[type="radio"] {
   overflow: hidden;
   z-index: 1;
 }
-@media (min-width: 1600px){
+
+@media (min-width: 1600px) {
   .hero-section .carousel-item {
     min-height: 960px;
   }
 }
-.hero-section .carousel-item .cover-img{
+
+.hero-section .carousel-item .cover-img {
   position: absolute;
   top: 0;
   left: 0;
@@ -510,7 +515,8 @@ input[type="radio"] {
   transform: scale(1.2);
   transition: transform 2.5s ease-in-out;
 }
-.hero-section .carousel-item.active .cover-img{
+
+.hero-section .carousel-item.active .cover-img {
   transform: scale(1);
 }
 
@@ -565,16 +571,19 @@ input[type="radio"] {
     left: calc((100vw - 960px) / 2);
   }
 }
+
 @media (min-width: 1200px) {
   .hero-section .carousel-indicators {
     left: calc((100vw - 1140px) / 2);
   }
 }
+
 @media (min-width: 1400px) {
   .hero-section .carousel-indicators {
     left: calc((100vw - 1264px) / 2);
   }
 }
+
 .hero-section .carousel-indicators button {
   width: 1.5px;
   height: 11px;
@@ -756,9 +765,6 @@ input[type="radio"] {
   align-items: center;
 }
 
-/* .timeline-block+.timeline-block{
-  margin-top: -1.875rem;
-} */
 .timeline-block:nth-child(even) {
   flex-direction: row-reverse;
 }
@@ -952,9 +958,11 @@ input[type="radio"] {
   font-family: var(--heading-font);
   text-transform: uppercase;
 }
+
 .rsvp-text:hover {
   color: var(--color-secondary);
 }
+
 .rsvp-text span {
   position: relative;
   display: block;
@@ -1175,6 +1183,7 @@ START COUPLE-LIST SECTION
   font-size: var(--body-text);
   display: block;
 }
+
 .review-sec .bottom-props {
   position: absolute;
   right: 0;
@@ -1280,7 +1289,8 @@ START COUPLE-LIST SECTION
   margin-bottom: 2rem;
   text-align: center;
 }
-.form-wrapper .fancy-divider img{
+
+.form-wrapper .fancy-divider img {
   height: auto;
 }
 
@@ -1345,6 +1355,7 @@ footer .logo-text {
   margin-bottom: 2rem;
   line-height: normal;
 }
+
 footer .logo-text:hover,
 footer .logo-text:focus-visible {
   color: var(--color-secondary);
