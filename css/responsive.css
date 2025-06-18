@@ -269,7 +269,7 @@
         padding-right: 0;
     }
     .hero-section .carousel-item {
-        min-height: calc(90vh - 70px);
+        min-height: calc(100dvh - 70px);
         padding-bottom: 100px;
     }
 
@@ -342,6 +342,10 @@
     footer .logo-text{
         font-size: 1.984rem;
     }
+    footer .logo-text img{
+        width: 30px;
+        height: 30px;
+    }
     footer hr {
         margin-top: 0.25rem;
         margin-bottom: 1rem;
@@ -351,6 +355,12 @@
     }
     form .btn-group{
         margin-top: 2rem;
+    }
+    .couple-list-sec .col-6 {
+        width: 100%;
+    }
+    .person-card {
+        height: 100vw;
     }
 }
 /* END 575px */

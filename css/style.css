@@ -488,7 +488,7 @@ input[type="radio"] {
 
 .hero-section .carousel-item {
   position: relative;
-  min-height: calc(100vh - 70px);
+  min-height: calc(100dvh - 70px);
   padding: var(--size-50) 0;
   display: flex;
   flex-direction: column;
@@ -509,19 +509,12 @@ input[type="radio"] {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100dvh;
   object-fit: cover;
-  object-position: center;
+  object-position: center center;
   transform: scale(1.2);
   transition: transform 2.5s ease-in-out;
 }
-.hero-section .carousel-item .cover-img img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
 .hero-section .carousel-item.active .cover-img {
   transform: scale(1);
 }
