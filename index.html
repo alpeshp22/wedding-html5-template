@@ -22,10 +22,10 @@
 
     <!-- Template CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/aos.css" rel="stylesheet" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="css/fancybox.css" type="media" media="print" onload="this.media='all'">
+    <link href="css/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/fancybox.css" type="media">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 
@@ -827,32 +827,11 @@
     <!-- Scripts -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/aos.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script src="js/fontawesome.js"></script>
     <script src="js/main.js"></script>
-    <script>
-        window.addEventListener('DOMContentLoaded', () => {
-            setTimeout(() => {
-                const owl = document.createElement('script');
-                owl.src = 'js/owl.carousel.min.js';
-                owl.onload = () => {
-                    $('.owl-carousel').owlCarousel({ loop: true });
-                };
-                document.body.appendChild(owl);
-
-                const fancybox = document.createElement('script');
-                fancybox.src = 'js/fancybox.umd.js';
-                fancybox.onload = () => {
-                    // Initialize Fancybox if needed
-                    Fancybox.bind('[data-fancybox]', {});
-                };
-                document.body.appendChild(fancybox);
-
-                const fontawesome = document.createElement('script');
-                fontawesome.src = 'js/fontawesome.js';
-                document.body.appendChild(fontawesome);
-            }, 2000);
-        });
-    </script>
 
 </body>
 
