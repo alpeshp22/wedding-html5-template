@@ -677,7 +677,7 @@ input[type="radio"] {
   transform: translateX(-50%);
   width: 154px;
   height: 154px;
-  background-image: url(../images/hearts-shadow.png);
+  background-image: url(../images/hearts-shadow.webp);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -755,7 +755,7 @@ input[type="radio"] {
 .story-timeline-sec .container {
   position: relative;
   padding-bottom: 1.5rem;
-  background-image: url('../images/timeline-divider.png');
+  background-image: url('../images/timeline-divider.webp');
   background-repeat: no-repeat;
   background-position: bottom center;
 }
