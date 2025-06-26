@@ -332,6 +332,10 @@
     footer .logo-text{
         font-size: 1.984rem;
     }
+    footer .logo-text img {
+        width: 30px;
+        height: 30px;
+    }
     footer hr {
         margin-top: 0.25rem;
         margin-bottom: 1rem;

@@ -1323,6 +1323,12 @@ footer .logo-text {
   text-transform: uppercase;
   margin-bottom: 2rem;
   line-height: normal;
+  text-decoration: none;
+}
+
+footer .logo-text:hover, footer .logo-text:focus-visible {
+  color: var(--color-secondary);
+  text-decoration: none;
 }
 
 footer h2 {
