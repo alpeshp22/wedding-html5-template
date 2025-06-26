@@ -512,7 +512,12 @@ input[type="radio"] {
 .hero-section .owl-item.active .cover-img {
   transform: scale(1.2);
 }
-
+.hero-section .owl-item.active .cover-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
 .hero-section .slider-item::after {
   content: "";
   position: absolute;
