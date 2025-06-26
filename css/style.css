@@ -486,9 +486,9 @@ input[type="radio"] {
   margin-top: calc(var(--size-50) - 1rem);
 }
 
-.hero-section .carousel-item {
+.hero-section .slider-item {
   position: relative;
-  min-height: calc(100dvh - 70px);
+  min-height: clamp(500px, 50vw, 800px);
   padding: var(--size-50) 0;
   display: flex;
   flex-direction: column;
@@ -498,28 +498,22 @@ input[type="radio"] {
   z-index: 1;
 }
 
-@media (min-width: 1600px) {
-  .hero-section .carousel-item {
-    min-height: 960px;
-  }
-}
-
-.hero-section .carousel-item .cover-img {
+.hero-section .slider-item .cover-img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100dvh;
+  height: 100%;
   object-fit: cover;
   object-position: center center;
-  transform: scale(1.2);
   transition: transform 2.5s ease-in-out;
+  z-index: -1;
 }
-.hero-section .carousel-item.active .cover-img {
-  transform: scale(1);
+.hero-section .owl-item.active .cover-img {
+  transform: scale(1.2);
 }
 
-.hero-section .carousel-item::after {
+.hero-section .slider-item::after {
   content: "";
   position: absolute;
   top: 0;
@@ -545,62 +539,72 @@ input[type="radio"] {
   opacity: 0;
 }
 
-.hero-section .carousel-item.active .content {
+.hero-section .owl-item.active .content {
   opacity: 1;
   animation: fadeInDown 1.5s forwards ease-in-out;
 }
 
-.hero-section .carousel-indicators {
+.hero-section .owl-dots{
+  position: absolute;
+  left: 1.25rem;
+  top: 50%;
+  transform: translateY(-50%);
   display: flex;
   flex-direction: column;
   gap: 7px;
-  top: 50%;
-  left: 5vw;
-  transform: translateY(-50%);
-  right: inherit;
-  margin: 0;
-  padding: 3vw 4vw;
-  padding-left: 12px;
-  height: 100%;
+}
+.hero-section .owl-dots button{
+  display: inline-block;
+  width: 8px;
+  height: 16px;
+  border-radius: 30px;
+  background-color: var(--color-white);
+  transition: var(--td-3);
+}
+.hero-section .owl-dots button.active{
+  height: 32px;
+  background-color: var(--color-secondary);
 }
 
 /* For lg (max-width: 960px) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .hero-section .carousel-indicators {
+@media (min-width: 768px) {
+  .hero-section .owl-dots {
+    left: calc((100vw - 720px) / 2);
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-section .owl-dots {
     left: calc((100vw - 960px) / 2);
   }
 }
 
 @media (min-width: 1200px) {
-  .hero-section .carousel-indicators {
+  .hero-section .owl-dots {
     left: calc((100vw - 1140px) / 2);
   }
 }
 
 @media (min-width: 1400px) {
-  .hero-section .carousel-indicators {
-    left: calc((100vw - 1264px) / 2);
+  .hero-section .owl-dots {
+    left: calc((100vw - 1240px) / 2);
   }
 }
 
-.hero-section .carousel-indicators button {
-  width: 1.5px;
+.hero-section .owl-dots button {
+  width: 5px;
   height: 11px;
   display: block;
   margin: 0 !important;
   padding: 0 !important;
   border: 0;
-  border-radius: 10px;
+  border-radius: 30px;
   opacity: 1;
   background-color: var(--color-white);
   transition: all .3s ease-in-out;
 }
 
-.hero-section .carousel-indicators:hover button {
-  width: 3px;
-}
-
-.hero-section .carousel-indicators button.active {
+.hero-section .owl-dots button.active {
   height: 32px;
   background-color: var(--color-secondary);
 }
@@ -675,12 +679,15 @@ input[type="radio"] {
   left: 50%;
   top: 30px;
   transform: translateX(-50%);
-  width: 154px;
-  height: 154px;
-  background-image: url(../images/hearts-shadow.webp);
+  width: 4.625rem;
+  height: 4.625rem;
+  background-color: var(--color-white);
+  border-radius: 75%;
+  background-image: url(../images/hearts.svg);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: 2.688rem;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.251);
   z-index: 1;
 }
 
@@ -1192,7 +1199,7 @@ START COUPLE-LIST SECTION
   pointer-events: none;
 }
 
-.owl-dots {
+.review-sec .owl-dots {
   position: absolute;
   left: 0;
   width: 100%;
@@ -1203,7 +1210,7 @@ START COUPLE-LIST SECTION
   justify-content: center;
 }
 
-.owl-dots .owl-dot {
+.review-sec .owl-dots .owl-dot {
   display: block;
   width: 5px;
   height: 5px;
@@ -1211,7 +1218,7 @@ START COUPLE-LIST SECTION
   background-color: var(--color-secondary) !important;
 }
 
-.owl-dots .owl-dot.active {
+.review-sec .owl-dots .owl-dot.active {
   width: 10px;
   height: 10px;
 }

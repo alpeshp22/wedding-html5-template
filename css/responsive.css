@@ -87,9 +87,6 @@
     .site-header .navbar {
         height: 70px;
     }
-    .hero-section .carousel-item{
-        min-height: calc(100vh - 70px);
-    }
     .hero-section .carousel-indicators {
         left: 20px;
     }
@@ -194,8 +191,6 @@
     .intro-block+.intro-block::before{
         left: 50%;
         top: -50px;
-        width: 100px;
-        height: 100px;
     }
     .timeline-block .image-block {
         width: 70%;
@@ -233,7 +228,7 @@
     .review-sec .content{
         padding: 0 2rem;
     }
-    .owl-dots {
+    .review-sec .owl-dots {
         position: relative;
         bottom: inherit;
         top: inherit;
@@ -268,19 +263,14 @@
         padding-left: 0;
         padding-right: 0;
     }
-    .hero-section .carousel-item {
-        min-height: calc(100dvh - 70px);
-        padding-bottom: 100px;
+    .hero-section .slider-item{
+        padding-bottom: calc(0.25rem * 25);
     }
-
     .hero-section strong, .hero-section p {
         font-size: 1.125rem;
     }
     .hero-section strong {
         letter-spacing: 6px;
-    }
-    .hero-section .carousel-indicators{
-        left: 8px;
     }
     .hero-section .carousel-caption{
         padding-left: 2.875rem;
@@ -369,7 +359,7 @@
     
     .hero-section h1 span {
         display: block;
-}
+    }
 
     .intro-block {
         flex-direction: column-reverse;
@@ -387,7 +377,10 @@
         width: 60%;
     }
     .intro-block+.intro-block::before{
-        top: -58px;
+        top: -40px;
+        width: 60px;
+        height: 60px;
+        background-size: 30px;
     }
     .invitation-sec .content-col {
         padding-top: 80px;
