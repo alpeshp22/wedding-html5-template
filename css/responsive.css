@@ -134,7 +134,7 @@
     .event-details .vanue-info{
         max-width: 95%;
     }
-    .event-details iframe {
+    .event-details .map-wrapper {
         border: 0;
         aspect-ratio: 16 / 7;
     }
