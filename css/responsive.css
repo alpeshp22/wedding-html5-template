@@ -134,7 +134,7 @@
     .event-details .vanue-info{
         max-width: 95%;
     }
-    .event-details .map-wrapper {
+    .event-details iframe {
         border: 0;
         aspect-ratio: 16 / 7;
     }
@@ -190,7 +190,7 @@
     }
     .intro-block+.intro-block::before{
         left: 50%;
-        top: -50px;
+        top: -40px;
     }
     .timeline-block .image-block {
         width: 70%;
@@ -228,7 +228,7 @@
     .review-sec .content{
         padding: 0 2rem;
     }
-    .review-sec .owl-dots {
+    .owl-dots {
         position: relative;
         bottom: inherit;
         top: inherit;
@@ -263,14 +263,15 @@
         padding-left: 0;
         padding-right: 0;
     }
-    .hero-section .slider-item{
-        padding-bottom: calc(0.25rem * 25);
-    }
+
     .hero-section strong, .hero-section p {
         font-size: 1.125rem;
     }
     .hero-section strong {
         letter-spacing: 6px;
+    }
+    .hero-section .carousel-indicators{
+        left: 8px;
     }
     .hero-section .carousel-caption{
         padding-left: 2.875rem;
@@ -359,7 +360,7 @@
     
     .hero-section h1 span {
         display: block;
-    }
+}
 
     .intro-block {
         flex-direction: column-reverse;

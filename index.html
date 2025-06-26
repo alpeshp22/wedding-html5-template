@@ -19,21 +19,13 @@
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="images/apple-touch-icon-180x180.png">
 
-    <!-- Google Font (media="print" onload="this.media='all'")-->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Niconne&display=swap">
 
     <!-- Template CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/aos.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/fancybox.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 
@@ -103,9 +95,9 @@
     <!-- /Header -->
 
     <!-- Hero Section -->
-    <div class="hero-section">
-        <div class="hero-slider owl-carousel owl-theme">
-            <div class="slider-item" style="background-image: url(images/herobg1.webp);">
+    <div id="heroCarousel" class="hero-section carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url('images/hero-bg1.webp');">
                 <div class="container carousel-caption">
                     <div class="content">
                         <strong>THe wedding of</strong>
@@ -115,7 +107,7 @@
                     </div>
                 </div>
             </div>
-            <div class="slider-item" style="background-image: url(images/herobg2.webp);">
+            <div class="carousel-item" style="background-image: url('images/hero-bg2.webp');">
                 <div class="container carousel-caption">
                     <div class="content">
                         <strong>THe wedding of</strong>
@@ -125,7 +117,7 @@
                     </div>
                 </div>
             </div>
-            <div class="slider-item" style="background-image: url(images/herobg3.webp);">
+            <div class="carousel-item" style="background-image: url('images/hero-bg3.webp');">
                 <div class="container carousel-caption">
                     <div class="content">
                         <strong>THe wedding of</strong>
@@ -135,6 +127,12 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <img src="images/hero-props.webp" width="202" height="336" loading="lazy" class="flower" data-aos="fade-left"
             alt="decorative flowers" aria-hidden="true">
@@ -328,7 +326,10 @@
                 <strong class="time">03:30pm</strong>
             </div>
         </div>
-        <div class="map-wrapper" title="New york map"></div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d152552.0819771527!2d-74.11295701302696!3d40.72008769810916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1749641311876!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title="New york map"></iframe>
     </section>
     <!-- /Event Details Section -->
 
@@ -503,7 +504,7 @@
             </div>
         </div>
         <img src="images/review-props-bottom.webp" width="224" height="255" loading="lazy" class="bottom-props"
-            data-aos="fade-up" alt="Ouline deep pink flower" aria-hidden="true">
+            data-aos="fade-right" alt="Ouline deep pink flower" aria-hidden="true">
     </section>
     <!-- /Reviews Section -->
 
